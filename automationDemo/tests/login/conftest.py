@@ -10,7 +10,6 @@ def set_up_tear_down() -> None:
         page = context.new_page()
         page.set_viewport_size({"width": 1536, "height": 800})
         page.goto("https://visas-fr.tlscontact.com/login")
-        # page.goto("https://demoqa.com/")
         yield page
         browser.close()
 
